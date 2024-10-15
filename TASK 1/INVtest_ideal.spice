@@ -2,11 +2,11 @@
 
 .option scale=1e-8
 
-* INCLUDING THE INVERTER SUBCIRCUIT
-.include ./INV_ideal.spice
-
 * INCLUDING SKY130 TECHNOLOGY
 .lib "/edatools/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+
+* INCLUDING THE INVERTER SUBCIRCUIT
+.include ./INV_ideal.spice
 
 * CREATING A 1.8 V DC POWER
 Vdd VDD GND 1.8
