@@ -1,0 +1,21 @@
+* NGSPICE file created from lc_filter_lvs_magic.ext - technology: sky130A
+
+.subckt mim_cap_m4 VSUBS c2_n5100_n4540# c2_200_n4540# m4_160_n4580# m4_n5140_n4580#
+X0 c2_200_n4540# m4_160_n4580# sky130_fd_pr__cap_mim_m3_2 l=1.115e+13u w=1.115e+13u
+X1 c2_200_n4540# m4_160_n4580# sky130_fd_pr__cap_mim_m3_2 l=1.115e+13u w=1.115e+13u
+X2 c2_n5100_n4540# m4_n5140_n4580# sky130_fd_pr__cap_mim_m3_2 l=1.115e+13u w=1.115e+13u
+X3 c2_n5100_n4540# m4_n5140_n4580# sky130_fd_pr__cap_mim_m3_2 l=1.115e+13u w=1.115e+13u
+C0 c2_200_n4540# m4_n5140_n4580# 3.44fF
+C1 m4_160_n4580# m4_n5140_n4580# 3.80fF
+C2 c2_n5100_n4540# m4_n5140_n4580# 82.05fF
+C3 m4_160_n4580# c2_200_n4540# 82.05fF
+C4 m4_160_n4580# VSUBS 16.59fF
+C5 m4_n5140_n4580# VSUBS 16.59fF
+.ends
+
+.subckt lc_filter_lvs_magic p1 p2 gnd
+X0 gnd p1 p1 p2 p2 mim_cap_m4
+R0 p1 p2 sky130_fd_pr__res_generic_m5 w=6e+12u l=5e+11u
+C0 p2 gnd 3.36fF
+.ends
+

@@ -1,0 +1,9 @@
+* NGSPICE file created from lc_filter_lvs_magic.ext - technology: sky130A
+
+.subckt lc_filter_lvs_magic p1 p2 gnd
+X0 p1 p2 sky130_fd_pr__cap_mim_m3_2 l=2.23e+07u w=2.23e+07u
+X1 p1 p2 sky130_fd_pr__cap_mim_m3_2 l=2.23e+07u w=2.23e+07u
+X2 p1 p2 sky130_fd_pr__cap_mim_m3_2 l=2.23e+07u w=2.23e+07u
+X3 p1 p2 sky130_fd_pr__cap_mim_m3_2 l=2.23e+07u w=2.23e+07u
+R0 p1 p2 sky130_fd_pr__res_generic_m5 w=1.2e+07u l=1e+06u
+.ends

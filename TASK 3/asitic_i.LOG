@@ -1,0 +1,19 @@
+
+#################################################
+# ASITIC ver (Linux_Intel) Grackle INPUT LOG File
+# Generated on Wed Oct 16 20:53:35 2024
+#################################################
+
+sqrt
+optsq
+1 1
+10
+120
+2 1 10
+2 1 25
+met5
+met4
+2.5
+save 10
+cifsave 10 10.cif 1 100 poly
+exit
